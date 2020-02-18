@@ -12,7 +12,10 @@ $obj->message = "Mauvais identifiant ou mot de passe";
  * sont ok
  */
 
-$found = true;
+if ($_POST['username'] == 'admin' && $_POST['password'] == 'admin') {
+    $found = true;
+}
+
 if($found == true){
     $obj->success =true;
     $_SESSION['user'] = 123;

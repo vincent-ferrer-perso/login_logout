@@ -15,13 +15,13 @@
                                 url: 'Json/logout.php',
                                 method: 'get'
                             }).done(function () {
-                                window.location.href = '/login.html';
+                                window.location.href = '/login.php';
                             });
                         })
                 );
             } else {
                 /* le user n'est pas connecté */
-                window.location.href = '/login.html';
+                window.location.href = '/login.php';
             }
         }).fail(function () {
             $('body').html('Une erreur critique est arrivée.');
